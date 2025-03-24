@@ -90,6 +90,9 @@ configure(subprojects.filter { server in it.name || "utils" in it.name }) {
         testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")
         testImplementation("org.junit.jupiter:junit-jupiter-params:$junitJupiterVersion")
         testRuntimeOnly("org.junit.platform:junit-platform-console:1.9.0")
+        implementation("org.jetbrains.kotlin:kotlin-stdlib")
+        implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.6.0")
+        implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
     }
 }
 

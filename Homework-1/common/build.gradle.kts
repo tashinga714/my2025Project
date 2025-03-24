@@ -1,6 +1,7 @@
 plugins {
     val kotlinVersion = "1.7.10"
     kotlin("multiplatform") version kotlinVersion
+
 }
 
 group = rootProject.group
